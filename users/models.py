@@ -4,6 +4,8 @@ from django.utils import timezone  # Importa la librería timezone
 from .managers import CustomUserManager
 
 class Usuario(AbstractUser):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     first_name = models.CharField(max_length=45)
     last_name = models.CharField(max_length=45)
     username = models.CharField(max_length=150, unique=True)

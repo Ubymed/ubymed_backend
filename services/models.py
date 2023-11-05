@@ -2,14 +2,19 @@ from django.db import models
 from partners.models import SedeLaboratorioClinico
 
 class Servicio(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     id = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=45)
     descripcion = models.CharField(max_length=45)
+    url = models.CharField(max_length=45)
     is_active = models.BooleanField(default=False)
     def __str__(self):
         return f'{self.nombre} (id: {self.id})'
 
 class ConsultaMedica(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     id = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=45)
     descripcion = models.CharField(max_length=45)
@@ -19,6 +24,8 @@ class ConsultaMedica(models.Model):
         return self.nombre
 
 class PruebaLaboratorio(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     id = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=45)
     categoria = models.CharField(max_length=45)

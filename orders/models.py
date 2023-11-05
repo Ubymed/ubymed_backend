@@ -10,6 +10,8 @@ from services.models import Servicio
 default_location = Point(-90.513228, 14.642942)
 
 class Orden(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     id = models.AutoField(primary_key=True)
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
     servicio = models.ForeignKey(Servicio, on_delete=models.DO_NOTHING)
@@ -28,6 +30,8 @@ class Orden(models.Model):
         return f'Orden {self.id} - Usuario: {self.usuario.first_name} {self.usuario.first_name}'
     
 class OrdenConsultaMedica(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     id = models.AutoField(primary_key=True)
     orden_id = models.ForeignKey(Orden, on_delete=models.CASCADE)
     socio = models.ForeignKey(Socio, on_delete=models.CASCADE)
@@ -49,6 +53,8 @@ class OrdenConsultaMedica(models.Model):
         return f"Orden de Consulta {self.id}"
     
 class OrdenPruebaLaboratorio(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     id = models.AutoField(primary_key=True)
     orden_id = models.ForeignKey(Orden, on_delete=models.CASCADE)
     socio = models.ForeignKey(Socio, on_delete=models.CASCADE)
@@ -69,12 +75,16 @@ class OrdenPruebaLaboratorio(models.Model):
         return f"Orden de Laboratorio {self.id}"
     
 class DetalleOrdenLaboratorio(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     orden_id = models.ForeignKey(Orden, on_delete=models.CASCADE)
     prueba_laboratorio = models.ForeignKey(PruebaLaboratorio, on_delete=models.CASCADE)
     def __str__(self):
         return f"Detalle de Laboratorio para Orden {self.orden_id.id}"
 
 class RegistroConsultaMedica(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     id = models.AutoField(primary_key=True)
     motivo = models.TextField(null=True)
     historia = models.TextField(null=True)
@@ -90,6 +100,8 @@ class RegistroConsultaMedica(models.Model):
         return f"Registro de Consulta para Orden {self.orden.id}"
     
 class RegistroPruebaLaboratorio(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     id = models.AutoField(primary_key=True)
     comentario = models.TextField(null=True)
     orden_id = models.ForeignKey(OrdenPruebaLaboratorio, on_delete=models.CASCADE)
