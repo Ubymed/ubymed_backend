@@ -86,7 +86,7 @@ WSGI_APPLICATION = "ubymed_backend.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'ubymed_db',
+        'NAME': 'ubymed_database',
         'USER': 'ubymed',
         'PASSWORD': 'Ubymed230821',
         'HOST': 'localhost',  # O la dirección IP de tu servidor MySQL
@@ -143,8 +143,6 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-GDAL_LIBRARY_PATH = '/usr/local/Cellar/gdal/3.7.2_1/lib/libgdal.33.3.7.2.dylib'
-GEOS_LIBRARY_PATH = '/usr/local/opt/geos/lib/libgeos_c.dylib'  # Replace with the actual path
 
 LOGIN_REDIRECT_URL = '/accounts/profile/'
 

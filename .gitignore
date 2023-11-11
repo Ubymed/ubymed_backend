@@ -1,0 +1,7 @@
+# Ignorar archivos de respaldo generados por el editor de texto
+*~
+
+# Ignorar archivos temporales
+.tmp/
+
+venv/
