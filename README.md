@@ -5,7 +5,7 @@
 
 
 ## Index
-- [Technology stack](#tecnology stack)
+- [Technology stack](#tecnology-stack)
 - [Recommended software](#software)
 - [Project structure](#structure)
 - [How to setup guide](#setup)
