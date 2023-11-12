@@ -7,7 +7,7 @@
 ## Technology Stack
 
 - **Operating System**: The project was developed on macOS and tested on an Ubuntu server environment. Some adjustments may be needed to work on your environment.
-- **Database**: PostgreSQL is used as the database management system to store and retrieve data efficiently.
+- **Database**: PostgreSQL is used as the database management with the PostGIS extension for geospatial data support, to store and retrieve data efficiently.
 - **Backend Framework**: The backend of this project is built with Django, a high-level Python web framework.
 
 
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 
 
 ### Database Configuration
-This project uses PostgreSQL as the database. Ensure you have a configured PostgreSQL instance and update the database configuration in `settings.py`.
+This project uses PostgreSQL as the database with the PostGIS extension for geospatial data support. Ensure you have a configured PostgreSQL instance with PostGIS enabled and update the database configuration in `settings.py`.
 
 
 ### Migrations and Database Creation
