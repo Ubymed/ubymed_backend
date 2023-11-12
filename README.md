@@ -63,8 +63,14 @@ Now, your development environment is isolated from the system Python, and you ca
 ### Installing Dependencies
 Ensure that you have Python 3 and pip installed on your system. Then, install the project's dependencies:
 
+#### Ubuntu:
 ```bash
-pip install -r requirements.txt
+pip install -r requirements_ubuntu.txt
+```
+
+#### MacOS:
+```bash
+pip install -r requirements_macos.txt
 ```
 
 
