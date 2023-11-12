@@ -140,8 +140,8 @@ To interact with the API, you can make HTTP requests using your preferred tool o
 ### API Documentation
 To read more about API endpoints, urls and supported methods please refer to our detailed documentation:
 
-[Open Swagger Documentation](https://your-api-endpoint.com/swagger)
-[Open Redoc Documentation](https://your-api-endpoint.com/redoc)
+- [Open Swagger Documentation](https://your-api-endpoint.com/swagger)
+- [Open Redoc Documentation](https://your-api-endpoint.com/redoc)
 
 
 ## Contribution
