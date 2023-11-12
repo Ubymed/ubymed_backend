@@ -89,8 +89,8 @@ DATABASES = {
         'NAME': 'ubymed_database',
         'USER': 'ubymed',
         'PASSWORD': 'Ubymed230821',
-        'HOST': 'localhost',  # O la dirección IP de tu servidor MySQL
-        'PORT': '5432',  # El puerto por defecto de MySQL es 3306
+        'HOST': 'localhost', 
+        'PORT': '5432',
     }
 }
 
