@@ -83,7 +83,7 @@ Now, your development environment is isolated from the system Python, and you ca
 
 
 ### Installing Dependencies
-Ensure that you have Python 3 and pip installed on your system. Then, install the project's dependencies:
+Ensure that you have Python and pip installed on your system and that you virtual environment in active. Then, install the project's dependencies:
 
 #### Ubuntu:
 ```bash
