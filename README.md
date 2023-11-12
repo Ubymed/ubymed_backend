@@ -97,7 +97,8 @@ pip install -r requirements_macos.txt
 
 
 ### Database Configuration
-This project uses PostgreSQL as the database with the PostGIS extension for geospatial data support. Ensure you have a configured PostgreSQL instance with PostGIS enabled and update the database configuration in `settings.py`.
+This project uses PostgreSQL as the database with the PostGIS extension for geospatial data support. 
+Ensure you have a configured PostgreSQL instance with PostGIS enabled and update the database configuration in `settings.py`.
 
 
 ### Migrations and Database Creation
