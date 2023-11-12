@@ -42,26 +42,9 @@ The project is organized with the following directory structure:
     - `urls.py/`: Project-wide URL routing.
     - `wsgi.py`: WSGI configuration for deployment.
   - `users/`: Contains Django models, views, serializers for handling users and authentication.
-    - `admin.py/`: Registers the models for admin panel.
-    - `models.py/`: Django model for users.
-    - `serializers.py`: Serializers for managing JSON data of models.
-    - `views.py`: Custom views/methods for interacting with the API.
-    - `permissions.py`: Custom permissions for authentication.
   - `partners/`: Contains Django models, views, serializers for handling partners.
-    - `admin.py/`: Registers the models for admin panel.
-    - `models.py/`: Django model for partners (Socio, Medico, Laboratorio, etc).
-    - `serializers.py`: Serializers for managing JSON data of models.
-    - `views.py`: Custom views/methods for interacting with the API.
   - `services/`: Contains Django models, views, serializers for handling services.
-    - `admin.py/`: Registers the models for admin panel.
-    - `models.py/`: Django model for services offered (Consultas, Laboratorios, etc).
-    - `serializers.py`: Serializers for managing JSON data of models.
-    - `views.py`: Custom views/methods for interacting with the API.
   - `orders/`: Contains Django models, views, serializers for handling orders.
-    - `admin.py/`: Registers the models for admin panel.
-    - `models.py/`: Django model for each type of order (Orden, OrdenConsulta, OrdenLaboratorio, etc).
-    - `serializers.py`: Serializers for managing JSON data of models.
-    - `views.py`: Custom views/methods for interacting with the API.
   - `static/`: Stores static assets such as CSS, JavaScript, and images used in the application.
 
 
