@@ -58,7 +58,7 @@ To clone this repository, run the following command in your terminal:
 git clone https://github.com/ubymed/ubymed_backend.git
 ```
 
-### Setup Virtual Environment
+### Setting up Virtual Environment
 To test and work on this code, it's recommended to create a Python virtual environment using `venv`. If you're using Python 3.3 or later, you can create a virtual environment with the following commands:
 
 ```bash
