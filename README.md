@@ -6,10 +6,10 @@
 
 ## Index
 - [Technology stack](#technology-stack)
-- [Recommended software](#software)
-- [Project structure](#structure)
-- [How to setup guide](#setup)
-- [How to use the API](#api)
+- [Recommended software](#recommended-software)
+- [Project structure](#project-structure)
+- [How to setup guide](#how-to-setup-setup)
+- [How to use the API](#how-to-use-the-api)
 - [Contribution](#contribution)
 - [Contact](#contact)
 
@@ -20,7 +20,7 @@
 - **Backend Framework**: The backend of this project is built with Django, a high-level Python web framework.
 
 
-## Recommended Software {#software}
+## Recommended Software
 The following software was used for the development of this project:
 
 - **Postgres**: Full-featured PostgreSQL installation packaged as a standard Mac app. (Required)
@@ -34,7 +34,7 @@ The following software was used for the development of this project:
 - **Postman**: To test API access to the project. (Optional)
 
 
-## Project Structure {#structure}
+## Project Structure
 The project is organized with the following directory structure:
 
 - `ubymed_backend/`: This directory contains the main application code.
@@ -49,7 +49,7 @@ The project is organized with the following directory structure:
   - `static/`: Stores static assets such as CSS, JavaScript, and images used in the application.
 
 
-## How to Setup Guide {#setup}
+## How to Setup Guide
 To test and work on this code you will need to:
 
 1. Clone this repository.
@@ -153,7 +153,7 @@ To read more about API endpoints, urls and supported methods please refer to our
 - [Open Redoc Documentation](https://your-api-endpoint.com/redoc)
 
 
-## Contribution {#contribution}
+## Contribution
 
 If you'd like to contribute to the project, follow these steps:
 
@@ -164,5 +164,5 @@ If you'd like to contribute to the project, follow these steps:
 5. Create a Pull Request on GitHub.
 
 
-## Contact {#contact}
+## Contact
 If you have any questions or need assistance, feel free to get in touch at mflores@ubymed.com.
