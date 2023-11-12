@@ -11,6 +11,20 @@
 - **Backend Framework**: The backend of this project is built with Django, a high-level Python web framework.
 
 
+## Project Structure
+The project is organized with the following directory structure:
+
+- `ubymed_backend/`: This directory contains the main application code.
+  - `ubymed_backend/`: Configuration and general files for the project.
+    - `settings.py/`: Configuration file for the project.
+    - `urls.py/`: Project-wide URL routing.
+    - `wsgi.py`: WSGI configuration for deployment.
+  - `users/`: Contains Django models, views, serializers for handling users.
+  - `partners/`: Contains Django models, views, serializers for handling partners.
+  - `services/`: Contains Django models, views, serializers for handling services.
+  - `orders/`: Contains Django models, views, serializers for handling orders.
+
+
 ## How to Setup Guide
 To test and work on this code you will need to:
 
@@ -57,20 +71,6 @@ To run the development server, use the following command:
 python manage.py runserver
 ```
 The server will be available at http://localhost:8000/.
-
-
-## Project Structure
-The project is organized with the following directory structure:
-
-- `ubymed_backend/`: This directory contains the main application code.
-  - `ubymed_backend/`: Configuration and general files for the project.
-    - `settings.py/`: Configuration file for the project.
-    - `urls.py/`: Project-wide URL routing.
-    - `wsgi.py`: WSGI configuration for deployment.
-  - `users/`: Contains Django models, views, serializers for handling users.
-  - `partners/`: Contains Django models, views, serializers for handling partners.
-  - `services/`: Contains Django models, views, serializers for handling services.
-  - `orders/`: Contains Django models, views, serializers for handling orders.
 
 
 ## Contribution
