@@ -113,7 +113,6 @@ The server will be available at http://localhost:8000/.
 ## How to Use the API
 
 ### Making API Requests
-
 To interact with the API, you can make HTTP requests using your preferred tool or programming language. Here are some basic examples:
 
 - **Using cURL**:
@@ -136,6 +135,13 @@ To interact with the API, you can make HTTP requests using your preferred tool o
     // Handle data
   });
   ```
+
+
+### API Documentation
+To read more about API endpoints, urls and supported methods please refer to our detailed documentation:
+
+[Open Swagger Documentation](https://your-api-endpoint.com/swagger)
+[Open Redoc Documentation](https://your-api-endpoint.com/redoc)
 
 
 ## Contribution
