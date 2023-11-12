@@ -19,7 +19,7 @@ The project is organized with the following directory structure:
     - `settings.py/`: Configuration file for the project.
     - `urls.py/`: Project-wide URL routing.
     - `wsgi.py`: WSGI configuration for deployment.
-  - `users/`: Contains Django models, views, serializers for handling users.
+  - `users/`: Contains Django models, views, serializers for handling users and authentication.
   - `partners/`: Contains Django models, views, serializers for handling partners.
   - `services/`: Contains Django models, views, serializers for handling services.
   - `orders/`: Contains Django models, views, serializers for handling orders.
