@@ -128,7 +128,7 @@ To interact with the API, you can make HTTP requests using your preferred tool o
   curl -X GET https://your-api-endpoint.com/resource
   ```
 
-- **Using Python and requests library:**:
+- **Using Python and requests library**:
   ```python
   import requests
   response = requests.get('https://your-api-endpoint.com/resource')
