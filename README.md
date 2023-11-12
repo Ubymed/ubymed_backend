@@ -12,10 +12,11 @@
 
 
 ## Recommended Software
-The following software was used for the development of this project. It could be recommended to have the following software installed on your development machine if you are using macOS:
+The following software was used for the development of this project:
 
 - **Postgres**: Postgres is a full-featured PostgreSQL installation packaged as a standard Mac app. (Required)
 - **pgAdmin**: Used to easily manage PostgreSQL databases. (Optional)
+- **Terminal**: Access to Command Line Interface. (Required)
 - **Visual Studio Code**: Used to easily manage and edit code. (Optional)
 - **Python**: The project is written in Python. (Required)
 - **Django**: This project is built with Django, a Python web framework. (Requiered)
