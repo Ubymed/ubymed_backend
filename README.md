@@ -110,6 +110,34 @@ python manage.py runserver
 The server will be available at http://localhost:8000/.
 
 
+## How to Use the API
+
+### Making API Requests
+
+To interact with the API, you can make HTTP requests using your preferred tool or programming language. Here are some basic examples:
+
+- **Using cURL**:
+  ```bash
+  curl -X GET https://your-api-endpoint.com/resource
+  ```
+
+- **Using Python and requests library:**:
+  ```python
+  import requests
+response = requests.get('https://your-api-endpoint.com/resource')
+data = response.json()
+  ```
+
+- **Using cURL**:
+  ```js
+fetch('https://your-api-endpoint.com/resource')
+  .then(response => response.json())
+  .then(data => {
+    // Handle data
+  });
+  ```
+
+
 ## Contribution
 
 If you'd like to contribute to the project, follow these steps:
