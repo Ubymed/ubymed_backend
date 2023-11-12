@@ -11,6 +11,18 @@
 - **Backend Framework**: The backend of this project is built with Django, a high-level Python web framework.
 
 
+## Recommended Software
+The following software was used for the development of this project. It could be recommended to have the following software installed on your development machine if you are using macOS:
+
+- **Postgres**: Postgres is a full-featured PostgreSQL installation packaged as a standard Mac app. (Required)
+- **pgAdmin**: Used to easily manage PostgreSQL databases. (Optional)
+- **Visual Studio Code**: Used to easily manage and edit code. (Optional)
+- **Python**: The project is written in Python. (Required)
+- **Django**: This project is built with Django, a Python web framework. (Requiered)
+- **Safari or Chrome**: To test browser access to the project. (Optional)
+- **Postman**: To test API access to the project. (Optional)
+
+
 ## Project Structure
 The project is organized with the following directory structure:
 
