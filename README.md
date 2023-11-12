@@ -18,7 +18,7 @@
 - **Operating System**: The project was developed on macOS and tested on an Ubuntu server environment. Some adjustments may be needed to work on your environment.
 - **Database**: PostgreSQL is used as the database management with the PostGIS extension for geospatial data support, to store and retrieve data efficiently.
 - **Backend Framework**: The backend of this project is built with Django, a high-level Python web framework.
-- **Python**: The project is written in Python.
+- **Code Language**: The project is written in Python.
 
 
 ## Recommended Software
