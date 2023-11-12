@@ -124,13 +124,13 @@ To interact with the API, you can make HTTP requests using your preferred tool o
 - **Using Python and requests library:**:
   ```python
   import requests
-response = requests.get('https://your-api-endpoint.com/resource')
-data = response.json()
+  response = requests.get('https://your-api-endpoint.com/resource')
+  data = response.json()
   ```
 
-- **Using cURL**:
+- **Using JavaScript and fetch**:
   ```js
-fetch('https://your-api-endpoint.com/resource')
+  fetch('https://your-api-endpoint.com/resource')
   .then(response => response.json())
   .then(data => {
     // Handle data
