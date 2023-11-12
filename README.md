@@ -5,7 +5,7 @@
 
 
 ## Index
-- [Technology stack](#tecnology-stack)
+- [Technology stack](#technology-stack)
 - [Recommended software](#software)
 - [Project structure](#structure)
 - [How to setup guide](#setup)
@@ -13,7 +13,7 @@
 - [Contribution](#contribution)
 - [Contact](#contact)
 
-## [Technology Stack]
+## Technology Stack
 
 - **Operating System**: The project was developed on macOS and tested on an Ubuntu server environment. Some adjustments may be needed to work on your environment.
 - **Database**: PostgreSQL is used as the database management with the PostGIS extension for geospatial data support, to store and retrieve data efficiently.
