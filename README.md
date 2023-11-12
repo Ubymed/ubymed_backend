@@ -120,8 +120,6 @@ If you'd like to contribute to the project, follow these steps:
 4. Push to your branch: `git push origin my-feature`
 5. Create a Pull Request on GitHub.
 
-## Licence
-
 
 ## Contact
 If you have any questions or need assistance, feel free to get in touch at mflores@ubymed.com.
