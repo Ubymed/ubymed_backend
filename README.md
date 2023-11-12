@@ -23,6 +23,7 @@ The project is organized with the following directory structure:
   - `partners/`: Contains Django models, views, serializers for handling partners.
   - `services/`: Contains Django models, views, serializers for handling services.
   - `orders/`: Contains Django models, views, serializers for handling orders.
+  - `static/`: Stores static assets such as CSS, JavaScript, and images used in the application.
 
 
 ## How to Setup Guide
