@@ -8,7 +8,7 @@
 - [Technology stack](#technology-stack)
 - [Recommended software](#recommended-software)
 - [Project structure](#project-structure)
-- [How to setup guide](#how-to-setup-setup)
+- [How to setup guide](#how-to-setup-guide)
 - [How to use the API](#how-to-use-the-api)
 - [Contribution](#contribution)
 - [Contact](#contact)
@@ -119,7 +119,7 @@ python manage.py runserver
 The server will be available at http://localhost:8000/.
 
 
-## How to Use the API {#api}
+## How to Use the API
 
 ### Making API Requests
 To interact with the API, you can make HTTP requests using your preferred tool or programming language. Here are some basic examples:
