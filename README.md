@@ -4,14 +4,23 @@
  Backend code for the Ubymed project, providing APIs, data management, and authentication.
 
 
-## Technology Stack
+## Index
+- [Technology stack](#tecnology)
+- [Recommended software](#software)
+- [Project structure](#structure)
+- [How to setup guide](#setup)
+- [How to use the API](#api)
+- [Contribution](#contribution)
+- [Contact](#contact)
+
+## Technology Stack {#technology}
 
 - **Operating System**: The project was developed on macOS and tested on an Ubuntu server environment. Some adjustments may be needed to work on your environment.
 - **Database**: PostgreSQL is used as the database management with the PostGIS extension for geospatial data support, to store and retrieve data efficiently.
 - **Backend Framework**: The backend of this project is built with Django, a high-level Python web framework.
 
 
-## Recommended Software
+## Recommended Software {#software}
 The following software was used for the development of this project:
 
 - **Postgres**: Full-featured PostgreSQL installation packaged as a standard Mac app. (Required)
@@ -25,7 +34,7 @@ The following software was used for the development of this project:
 - **Postman**: To test API access to the project. (Optional)
 
 
-## Project Structure
+## Project Structure {#structure}
 The project is organized with the following directory structure:
 
 - `ubymed_backend/`: This directory contains the main application code.
@@ -40,7 +49,7 @@ The project is organized with the following directory structure:
   - `static/`: Stores static assets such as CSS, JavaScript, and images used in the application.
 
 
-## How to Setup Guide
+## How to Setup Guide {#setup}
 To test and work on this code you will need to:
 
 1. Clone this repository.
@@ -110,7 +119,7 @@ python manage.py runserver
 The server will be available at http://localhost:8000/.
 
 
-## How to Use the API
+## How to Use the API {#api}
 
 ### Making API Requests
 To interact with the API, you can make HTTP requests using your preferred tool or programming language. Here are some basic examples:
@@ -144,7 +153,7 @@ To read more about API endpoints, urls and supported methods please refer to our
 - [Open Redoc Documentation](https://your-api-endpoint.com/redoc)
 
 
-## Contribution
+## Contribution {#contribution}
 
 If you'd like to contribute to the project, follow these steps:
 
@@ -155,5 +164,5 @@ If you'd like to contribute to the project, follow these steps:
 5. Create a Pull Request on GitHub.
 
 
-## Contact
+## Contact {#contact}
 If you have any questions or need assistance, feel free to get in touch at mflores@ubymed.com.
