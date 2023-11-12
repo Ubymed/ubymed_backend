@@ -4,7 +4,14 @@
  Backend code for the Ubymed project, providing APIs, data management, and authentication.
 
 
-## Setup Guide
+## Technology Stack
+
+- **Operating System**: The project was developed on macOS and tested on an Ubuntu server environment. Some adjustments may be needed to work on your environment.
+- **Database**: PostgreSQL is used as the database management system to store and retrieve data efficiently.
+- **Backend Framework**: The backend of this project is built with Django, a high-level Python web framework.
+
+
+## How to Setup Guide
 To test and work on this code you will need to:
 
 1. Clone this repository.
@@ -60,10 +67,10 @@ The project is organized with the following directory structure:
     - `settings.py/`: Configuration file for the project.
     - `urls.py/`: Project-wide URL routing.
     - `wsgi.py`: WSGI configuration for deployment.
-  - `users/`: Contains Django views for handling various endpoints.
-  - `partners/`: Contains Django views for handling various endpoints.
-  - `services/`: Contains Django views for handling various endpoints.
-  - `orders/`: Contains Django views for handling various endpoints.
+  - `users/`: Contains Django models, views, serializers for handling users.
+  - `partners/`: Contains Django models, views, serializers for handling partners.
+  - `services/`: Contains Django models, views, serializers for handling services.
+  - `orders/`: Contains Django models, views, serializers for handling orders.
 
 
 ## Contribution
