@@ -14,7 +14,7 @@
 ## Recommended Software
 The following software was used for the development of this project:
 
-- **Postgres**: Postgres is a full-featured PostgreSQL installation packaged as a standard Mac app. (Required)
+- **Postgres**: Full-featured PostgreSQL installation packaged as a standard Mac app. (Required)
 - **Postgis**: Open source software program that adds support for geographic objects to the PostgreSQL object-relational database.
 - **pgAdmin**: Used to easily manage PostgreSQL databases. (Optional)
 - **Terminal**: Access to Command Line Interface. (Required)
