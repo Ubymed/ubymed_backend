@@ -30,10 +30,11 @@ The project is organized with the following directory structure:
 To test and work on this code you will need to:
 
 1. Clone this repository.
-2. Install dependencies
-3. Configure a database
-4. Migrate to database
-5. Run a development server
+2. Setup virtual environment
+3. Install dependencies
+4. Configure a database
+5. Migrate to database
+6. Run a development server
 
 
 ### Cloning Repository
@@ -42,6 +43,21 @@ To clone this repository, run the following command in your terminal:
 ```bash
 git clone https://github.com/ubymed/ubymed_backend.git
 ```
+
+### Setup Virtual Environment
+To test and work on this code, it's recommended to create a Python virtual environment using `venv`. If you're using Python 3.3 or later, you can create a virtual environment with the following commands:
+
+```bash
+python -m venv venv
+```
+
+Then activate the virtual environment:
+
+```bash
+source venv/bin/activate
+```
+
+Now, your development environment is isolated from the system Python, and you can install the project's dependencies inside the virtual environment.
 
 
 ### Installing Dependencies
