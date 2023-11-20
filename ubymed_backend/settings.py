@@ -157,3 +157,6 @@ GRAPH_MODELS = {
     'all_applications': True,
     'group_models': True,
 }
+
+CSRF_TRUSTED_ORIGINS = ['https://api.ubymed.com']
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
