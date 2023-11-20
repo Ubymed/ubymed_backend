@@ -8,8 +8,8 @@
 - [Technology stack](#technology-stack)
 - [Recommended software](#recommended-software)
 - [Project structure](#project-structure)
-- [How to setup local server](#how-to-setup-guide)
-- [How to setup remote server](#how-to-use-the-api)
+- [How to setup local server](#how-to-setup-local-server)
+- [How to setup remote server](#how-to-setup-remote-server)
 - [How to use the API](#how-to-use-the-api)
 - [Contribution](#contribution)
 - [Contact](#contact)
@@ -50,7 +50,7 @@ The project is organized with the following directory structure:
   - `static/`: Stores static assets such as CSS, JavaScript, and images used in the application.
 
 
-## How to Setup Guide
+## How to Setup Local Server
 To test and work on this code you will need to:
 
 1. Clone this repository.
@@ -83,7 +83,6 @@ source venv/bin/activate
 
 Now, your development environment is isolated from the system Python, and you can install the project's dependencies inside the virtual environment.
 
-
 ### 3. Installing Dependencies
 Ensure that you have Python and pip installed on your system and that you virtual environment in active. Then, install the project's dependencies:
 
@@ -92,11 +91,9 @@ Ensure that you have Python and pip installed on your system and that you virtua
 pip install -r requirements_macos.txt
 ```
 
-
 ### 4. Database Configuration
 This project uses PostgreSQL as the database with the PostGIS extension for geospatial data support. 
 Ensure you have a configured PostgreSQL instance with PostGIS enabled and update the database configuration in `settings.py`.
-
 
 ### 5. Migrations and Database Creation
 Run migrations to create the database and necessary tables:
@@ -105,7 +102,6 @@ Run migrations to create the database and necessary tables:
 python manage.py makemigrations
 python manage.py migrate
 ```
-
 
 ### 6. Run the Local Server
 To run the development server, use the following command:
@@ -116,7 +112,8 @@ python manage.py runserver
 The server will be available at http://localhost:8000/.
 
 
-## How to Setup a Remote Server
+
+## How to Setup Remote Server
 To run a remote server you will need to:
 
 1. Connect to remote server via SSH.
@@ -176,34 +173,40 @@ Run migrations to create the database and necessary tables:
 python manage.py makemigrations
 python manage.py migrate
 ```
-### 7. Install Gunicorn
+
+### 7. Collect Static Files
 To work in a remote server you have to collect static files. To do that do the following:
 
 Edit the following line in `settings.py`
+
 ```python
 STATIC_URL = '/static/'
 ```
+
 Run the following command to collect static files in the defines directory:
+
 ```bash
 python manage.py collectstatic
 ```
 
-
-### 7. Install Gunicorn
+### 8. Install Gunicorn
 
 To install Gunicorn run:
+
 ```bash
 pip install gunicorn
 ```
 
-### 8. Install and Configure Nginx
+### 9. Install and Configure Nginx
 
 To install Nginx run:
+
 ```bash
 sudo apt-get install nginx
 ```
 
 Configure Nginx by editing file:
+
 ```txt
 server {
     listen 80;
@@ -220,17 +223,21 @@ server {
 }
 ```
 
-### 9. Run Remote Server
+### 10. Run Remote Server
 
 Navigate to proyect parent folder and start gunicorn to run in background:
+
 ```bash
 nohup gunicorn ubymed_backend.wsgi:application &
 ```
 
-Restart server
+Restart nginx server:
+
 ```bash
 sudo systemctl reload nginx
 ```
+
+
 
 ## How to Use the API
 
@@ -266,6 +273,7 @@ To read more about API endpoints, urls and supported methods please refer to our
 - [Open Redoc Documentation](https://api.ubymed.com/redoc)
 
 
+
 ## Contribution
 
 If you'd like to contribute to the project, follow these steps:
@@ -275,6 +283,7 @@ If you'd like to contribute to the project, follow these steps:
 3. Make your changes and commit: `git commit -m "Added my feature"`
 4. Push to your branch: `git push origin my-feature`
 5. Create a Pull Request on GitHub.
+
 
 
 ## Contact
