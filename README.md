@@ -32,7 +32,8 @@ The following software was used for the development of this project:
 - **Visual Studio Code**: Used to easily manage and edit code. (Optional)
 - **Safari or Chrome**: To test browser access to the project. (Optional)
 - **Postman**: To test API access to the project. (Optional)
-
+- **Gunicorn**: Web server gateway interface (WSGI) server for running Python web applications. (Optional)
+- **Nginx**: High-performance web server and reverse proxy server. (Optional)
 
 ## Project Structure
 The project is organized with the following directory structure:
