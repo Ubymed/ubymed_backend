@@ -60,14 +60,14 @@ To test and work on this code you will need to:
 6. Run a local server
 
 
-### Cloning Repository
+### 1. Cloning Repository
 To clone this repository, run the following command in your terminal:
 
 ```bash
 git clone https://github.com/ubymed/ubymed_backend.git
 ```
 
-### Setting up Virtual Environment
+### 2. Setting up Virtual Environment
 To test and work on this code, it's recommended to create a Python virtual environment using `venv`. If you're using Python 3.3 or later, you can create a virtual environment with the following commands:
 
 ```bash
@@ -83,13 +83,8 @@ source venv/bin/activate
 Now, your development environment is isolated from the system Python, and you can install the project's dependencies inside the virtual environment.
 
 
-### Installing Dependencies
+### 3. Installing Dependencies
 Ensure that you have Python and pip installed on your system and that you virtual environment in active. Then, install the project's dependencies:
-
-#### Ubuntu:
-```bash
-pip install -r requirements_ubuntu.txt
-```
 
 #### MacOS:
 ```bash
@@ -97,12 +92,12 @@ pip install -r requirements_macos.txt
 ```
 
 
-### Database Configuration
+### 4. Database Configuration
 This project uses PostgreSQL as the database with the PostGIS extension for geospatial data support. 
 Ensure you have a configured PostgreSQL instance with PostGIS enabled and update the database configuration in `settings.py`.
 
 
-### Migrations and Database Creation
+### 5. Migrations and Database Creation
 Run migrations to create the database and necessary tables:
 
 ```bash
@@ -111,7 +106,7 @@ python manage.py migrate
 ```
 
 
-### Run the Development Server
+### 6. Run the Local Server
 To run the development server, use the following command:
 
 ```bash
@@ -134,16 +129,17 @@ To run a remote server you will need to:
 9. Run Remote Server
 
 
-### Connect to remote server via SSH
+### 1. Connect to remote server via SSH
+For this step you should already have a remote server configured, and access it through SSH. We used Amazon Web Services and an Ubuntu Server for development.
 
-### Cloning Repository
+### 2. Cloning Repository
 To clone this repository, run the following command in your terminal:
 
 ```bash
 git clone https://github.com/ubymed/ubymed_backend.git
 ```
 
-### Setting up Virtual Environment
+### 3. Setting up Virtual Environment
 To test and work on this code, it's recommended to create a Python virtual environment using `venv`. If you're using Python 3.3 or later, you can create a virtual environment with the following commands:
 
 ```bash
@@ -159,7 +155,7 @@ source venv/bin/activate
 Now, your development environment is isolated from the system Python, and you can install the project's dependencies inside the virtual environment.
 
 
-### Installing Dependencies
+### 4. Installing Dependencies
 Ensure that you have Python and pip installed on your system and that you virtual environment in active. Then, install the project's dependencies:
 
 #### Ubuntu:
@@ -167,11 +163,11 @@ Ensure that you have Python and pip installed on your system and that you virtua
 pip install -r requirements_ubuntu.txt
 ```
 
-### Database Configuration
+### 5. Database Configuration
 This project uses PostgreSQL as the database with the PostGIS extension for geospatial data support. 
 Ensure you have a configured PostgreSQL instance with PostGIS enabled and update the database configuration in `settings.py`.
 
-### Migrations and Database Creation
+### 6. Migrations and Database Creation
 Run migrations to create the database and necessary tables:
 
 ```bash
@@ -179,21 +175,20 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-### Install Gunicorn
-Gunicorn is a web server gateway interface (WSGI) server for running Python web applications. It serves as the interface between your Django application and the outside world, handling HTTP requests and managing the communication between your application and the web server. Gunicorn is commonly used to deploy Django applications in production environments.
+### 7. Install Gunicorn
 
 To install Gunicorn run:
 ```bash
 pip install gunicorn
 ```
 
-### Install Nginx
-Nginx is a high-performance web server and reverse proxy server. In the context of serving Django applications, Nginx often acts as a reverse proxy, forwarding requests from clients to the Gunicorn server running the Django application. Nginx is responsible for handling static files efficiently, load balancing, SSL termination, and serving as a layer of security between the internet and your Django application.
+### 8. Install and Configure Nginx
 
 To install Nginx run:
 ```bash
 sudo apt-get install nginx
 ```
+
 Configure Nginx by editing file:
 ```txt
 server {
@@ -208,12 +203,13 @@ server {
 }
 ```
 
-### Run Remote Server
+### 9. Run Remote Server
 
 Navigate to proyect parent folder and start gunicorn to run in background:
 ```bash
 nohup gunicorn ubymed_backend.wsgi:application &
 ```
+
 Restart server
 ```bash
 sudo systemctl reload nginx
