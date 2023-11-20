@@ -125,9 +125,10 @@ To run a remote server you will need to:
 4. Install dependencies
 5. Configure a database
 6. Migrate to database
-7. Install Gunicorn
-8. Install Nginx
-9. Run Remote Server
+7. Collect static files
+8. Install Gunicorn
+9. Install Nginx
+10. Run Remote Server
 
 
 ### 1. Connect to remote server via SSH
@@ -175,6 +176,18 @@ Run migrations to create the database and necessary tables:
 python manage.py makemigrations
 python manage.py migrate
 ```
+### 7. Install Gunicorn
+To work in a remote server you have to collect static files. To do that do the following:
+
+Edit the following line in `settings.py`
+```python
+STATIC_URL = '/static/'
+```
+Run the following command to collect static files in the defines directory:
+```bash
+python manage.py collectstatic
+```
+
 
 ### 7. Install Gunicorn
 
@@ -200,6 +213,9 @@ server {
         proxy_pass http://127.0.0.1:8000;  # Replace with your Gunicorn host and port
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
+    }
+    location /static/ {
+                alias /static/;
     }
 }
 ```
