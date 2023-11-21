@@ -225,16 +225,33 @@ server {
 
 ### 10. Run Remote Server
 
-Navigate to proyect parent folder and start gunicorn to run in background:
+Configure the application as a service with systemd. To do this create a file called ´ubymed_backend.service´ in ´/etc/systemd/system/´ containing:
 
-```bash
-nohup gunicorn ubymed_backend.wsgi:application &
+```ini
+[Unit]
+Description=Gunicorn instance to serve ubymed_backend
+After=network.target
+
+[Service]
+User=usuario_de_tu_app
+Group=grupo_de_tu_app
+WorkingDirectory=/ruta/a/tu/app
+ExecStart=/ruta/a/tu/app/venv/bin/gunicorn --workers=3 --bind=0.0.0.0:8000 tu_app.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
 ```
 
-Restart nginx server:
+Reload systemd:
 
 ```bash
-sudo systemctl reload nginx
+sudo systemctl daemon-reload
+```
+
+Enable new application service:
+
+```bash
+sudo systemctl enable ubymed_app
 ```
 
 
