@@ -225,7 +225,7 @@ server {
 
 ### 10. Run Remote Server
 
-Configure the application as a service with systemd. To do this create a file called ´ubymed_backend.service´ in ´/etc/systemd/system/´ containing:
+Configure the application as a service with systemd. To do this create a file called `ubymed_backend.service` in `/etc/systemd/system/` containing:
 
 ```ini
 [Unit]
