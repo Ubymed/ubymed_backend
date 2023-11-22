@@ -86,11 +86,11 @@ WSGI_APPLICATION = "ubymed_backend.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'ubymed_db',
+        'NAME': 'ubymed_database',
         'USER': 'ubymed',
         'PASSWORD': 'Ubymed230821',
-        'HOST': 'localhost',  # O la dirección IP de tu servidor MySQL
-        'PORT': '5432',  # El puerto por defecto de MySQL es 3306
+        'HOST': 'localhost', 
+        'PORT': '5432',
     }
 }
 
@@ -136,15 +136,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = '/static/'
+STATIC_ROOT = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-GDAL_LIBRARY_PATH = '/usr/local/Cellar/gdal/3.7.2_1/lib/libgdal.33.3.7.2.dylib'
-GEOS_LIBRARY_PATH = '/usr/local/opt/geos/lib/libgeos_c.dylib'  # Replace with the actual path
 
 LOGIN_REDIRECT_URL = '/accounts/profile/'
 
@@ -158,3 +157,6 @@ GRAPH_MODELS = {
     'all_applications': True,
     'group_models': True,
 }
+
+CSRF_TRUSTED_ORIGINS = ['https://api.ubymed.com']
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

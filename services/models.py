@@ -8,6 +8,7 @@ class Servicio(models.Model):
     nombre = models.CharField(max_length=45)
     descripcion = models.CharField(max_length=45)
     url = models.CharField(max_length=45)
+    sort_index = models.IntegerField(default=0)
     is_active = models.BooleanField(default=False)
     def __str__(self):
         return f'{self.nombre} (id: {self.id})'
