@@ -21,7 +21,10 @@ class ConsultaMedica(models.Model):
     descripcion = models.CharField(max_length=45)
     descripcion_larga = models.TextField()
     precio = models.DecimalField(max_digits=10, decimal_places=2)
+    tiempo_estimado = models.CharField(max_length=45)
+    cobertura = models.CharField()
     url = models.CharField(max_length=45)
+    img_url = models.URLField(max_length=200, blank=True, null=True)
     sort_index = models.IntegerField(default=0)
     active = models.BooleanField(default=False)
     def __str__(self):
