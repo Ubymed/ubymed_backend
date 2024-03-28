@@ -1,20 +1,22 @@
 # Ubymed Backend 
 
 ## Description
- Backend code for the Ubymed project, providing APIs, data management, and authentication.
+Backend code for the Ubymed project, providing APIs, data management, and authentication.
 
+## Status
+Active Development
 
-## Index
-- [Technology stack](#technology-stack)
-- [Recommended software](#recommended-software)
+## Table of Contents
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
 - [Project structure](#project-structure)
-- [How to setup local server](#how-to-setup-local-server)
-- [How to setup remote server](#how-to-setup-remote-server)
+- [Run local server](#run-local-server)
+- [Run remote server](#run-remote-server)
 - [How to use the API](#how-to-use-the-api)
 - [Contribution](#contribution)
 - [Contact](#contact)
 
-## Technology Stack
+## Built With
 
 - **Operating System**: The project was developed on macOS and tested on an Ubuntu server environment. Some adjustments may be needed to work on your environment.
 - **Database**: PostgreSQL is used as the database management with the PostGIS extension for geospatial data support, to store and retrieve data efficiently.
@@ -22,18 +24,22 @@
 - **Code Language**: The project is written in Python.
 
 
-## Recommended Software
-The following software was used for the development of this project:
+## Getting Started
 
-- **Postgres**: Full-featured PostgreSQL installation packaged as a standard Mac app. (Required)
-- **Postgis**: Open source software program that adds support for geographic objects to the PostgreSQL database. (Required)
+### Prerequisites
+Before you start, ensure you have the following software installed in your machine:
+- **Terminal**: Access to Command Line Interface.
+- **Postgres**: Full-featured PostgreSQL installation packaged as a standard Mac app.
+- **Postgis**: Open source software program that adds support for geographic objects to the PostgreSQL database.
+- **Gunicorn**: Web server gateway interface (WSGI) server for running Python web applications.
+- **Nginx**: High-performance web server and reverse proxy server.
+
+### Recommended tools
+The following software was used for the development of this project:
 - **pgAdmin**: Used to easily manage PostgreSQL databases. (Optional)
-- **Terminal**: Access to Command Line Interface. (Required)
 - **Visual Studio Code**: Used to easily manage and edit code. (Optional)
 - **Safari or Chrome**: To test browser access to the project. (Optional)
 - **Postman**: To test API access to the project. (Optional)
-- **Gunicorn**: Web server gateway interface (WSGI) server for running Python web applications. (Optional)
-- **Nginx**: High-performance web server and reverse proxy server. (Optional)
 
 ## Project Structure
 The project is organized with the following directory structure:
@@ -50,7 +56,7 @@ The project is organized with the following directory structure:
   - `static/`: Stores static assets such as CSS, JavaScript, and images used in the application.
 
 
-## How to Setup Local Server
+## Run Local Server
 To test and work on this code you will need to:
 
 1. Clone this repository.
@@ -58,7 +64,7 @@ To test and work on this code you will need to:
 3. Install dependencies
 4. Configure a database
 5. Migrate to database
-6. Run a local server
+6. Run server
 
 
 ### 1. Cloning Repository
@@ -103,7 +109,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 6. Run the Local Server
+### 6. Run Server
 To run the development server, use the following command:
 
 ```bash
@@ -113,7 +119,7 @@ The server will be available at http://localhost:8000/.
 
 
 
-## How to Setup Remote Server
+## Run Remote Server
 To run a remote server you will need to:
 
 1. Connect to remote server via SSH.
@@ -125,7 +131,7 @@ To run a remote server you will need to:
 7. Collect static files
 8. Install Gunicorn
 9. Install Nginx
-10. Run Remote Server
+10. Run server
 
 
 ### 1. Connect to remote server via SSH
@@ -223,7 +229,7 @@ server {
 }
 ```
 
-### 10. Run Remote Server
+### 10. Run Server
 
 Configure the application as a service with systemd. To do this create a file called `ubymed_backend.service` in `/etc/systemd/system/` containing:
 
