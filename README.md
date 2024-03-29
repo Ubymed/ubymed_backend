@@ -257,7 +257,7 @@ sudo systemctl daemon-reload
 Enable new application service:
 
 ```bash
-sudo systemctl enable ubymed_app
+sudo systemctl enable ubymed_backend
 ```
 
 
