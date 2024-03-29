@@ -211,7 +211,7 @@ To install Nginx run:
 sudo apt-get install nginx
 ```
 
-Configure Nginx by editing file:
+Configure Nginx by editing the file `/etc/nginx/sites-available/default.txt` to:
 
 ```txt
 server {
