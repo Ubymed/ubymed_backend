@@ -29,10 +29,10 @@ Active Development
 ### Prerequisites
 Before you start, ensure you have the following software installed in your machine:
 - **Terminal**: Access to Command Line Interface.
-- **Postgres (v16.1)**: Full-featured PostgreSQL installation packaged as a standard Mac app.
-- **Postgis (v3.4.0)**: Open source software program that adds support for geographic objects to the PostgreSQL database.
-- **Gunicorn (v21.2.1)**: Web server gateway interface (WSGI) server for running Python web applications.
-- **Nginx (v1.18.0)**: High-performance web server and reverse proxy server.
+- **Postgres (v16.1 or later)**: Full-featured PostgreSQL installation packaged as a standard Mac app.
+- **Postgis (v3.4.0 or later)**: Open source software program that adds support for geographic objects to the PostgreSQL database.
+- **Gunicorn (v21.2.1 or later)**: Web server gateway interface (WSGI) server for running Python web applications.
+- **Nginx (v1.18.0 or later)**: High-performance web server and reverse proxy server.
 
 ### Recommended tools
 The following software was used for the development of this project:
