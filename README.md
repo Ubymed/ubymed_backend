@@ -248,13 +248,13 @@ ExecStart=/ruta/a/tu/app/venv/bin/gunicorn --workers=3 --bind=0.0.0.0:8000 tu_ap
 WantedBy=multi-user.target
 ```
 
-Reload systemd:
+Reload systemd to detect the new application as a service:
 
 ```bash
 sudo systemctl daemon-reload
 ```
 
-Enable new application service:
+Enable new application as a service to load at startup:
 
 ```bash
 sudo systemctl enable ubymed_backend
