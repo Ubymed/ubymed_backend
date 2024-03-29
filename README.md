@@ -229,7 +229,7 @@ server {
 }
 ```
 
-### 10. Run Server
+### 10. Run Server with systemd
 
 Configure the application as a service with systemd. To do this create a file called `ubymed_backend.service` in `/etc/systemd/system/` containing:
 
